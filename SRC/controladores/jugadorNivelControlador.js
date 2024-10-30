@@ -1,4 +1,4 @@
-const { JugadorNivel } = require('../baseDatos');
+const { JugadorNivel } = require('../basesDatos');
 
 const registrarPuntaje = async (req, res) => {
   try {

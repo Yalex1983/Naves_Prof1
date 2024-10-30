@@ -1,4 +1,4 @@
-const { Nivel } = require('../baseDatos');
+const { Nivel } = require('../basesDatos');
 
 const crearNivel = async (req, res) => {
   try {
