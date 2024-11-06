@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-const jugadorRutas = require('./rutas/jugador');
-const niveleRutas = require('./rutas/nivel');
-const jugadorNivelRutas = require('./rutas/jugadorNivel');
+const jugadorRutas = require('./rutas/rutasJugador');
+const nivelRutas = require('./rutas/rutasNivel');
+const jugadorNivelRutas = require('./rutas/rutasJugadorNivel');
 
 const corsOpciones = {
   origin: 'http://localhost:3000',
@@ -18,7 +18,7 @@ app.use(cors(corsOpciones));
 app.use(express.json());
 
 app.use('/api/jugador', jugadorRutas);
-app.use('/api/nivel', niveleRutas);
+app.use('/api/nivel', nivelRutas);
 app.use('/api/jugadornivel', jugadorNivelRutas);
 
 const PORT = process.env.PORT || 3000;
